@@ -32,7 +32,7 @@ jobs:
         uses: TheDoctor0/zip-release@0.6.2
         with:
           type: 'zip'
-          filename: 'XOAPApplicationPackagingDSC_${{ steps.tag_version.outputs.new_tag }}.zip'
+          filename: 'xoap-uberagent-kibana-dashboards_${{ steps.tag_version.outputs.new_tag }}.zip'
           exclusions: '*.git* /*License/* CONTRIBUTING.md CODEOWNERS.md CODE_OF_CONDUCT.md .pre-commit.yaml .gitignore .gitattributes .github'
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
