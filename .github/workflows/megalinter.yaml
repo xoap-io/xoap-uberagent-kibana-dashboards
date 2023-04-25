@@ -26,7 +26,7 @@ jobs:
           DISABLE_LINTERS: TERRAFORM_TERRASCAN
       - name: Archive production artifacts
         if: ${{ success() }} || ${{ failure() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: MegaLinter reports
           path: |
