@@ -20,7 +20,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: hennejg/github-tag-action@2cd21a8413aa58e36a69cb22e64d5ad20aeb9b99
         id: tag_version
-        uses: hennejg/github-tag-action@v4.3.1
+        uses: hennejg/github-tag-action@v4.4.0
         with:
           tag_prefix: ""
           # Required for permission to tag the repo.
