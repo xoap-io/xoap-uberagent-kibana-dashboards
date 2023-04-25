@@ -1,18 +1,68 @@
-# Introduction
+[![Maintained](https://img.shields.io/badge/Maintained%20by-XOAP-success)](https://xoap.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Experimental support for Elasticsearch was added to uberAgent in version 3.6.0. This allows uberAgent to send data to Elasticsearch, 
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Guidelines](#guidelines)
+- [Share the Love](#share-the-love)
+- [Contributing](#contributing)
+- [Bug Reports and Feature Requests](#bug-reports--feature-requests)
+- [Developing](#developing)
+- [About uberAgent and ElasticSearch](#about-uberagent-and-elasticsearch)
+- [Configure uberAgent for ElasticSearch/OpenSearch](#configure-uberagent-for-elasticsearch--opensearch)
+- [Dashboards](#dashboards)
+
+---
+
+## Introduction
+
+Experimental support for Elasticsearch was added to uberAgent in version 3.6.0. This allows uberAgent to send data to Elasticsearch,
 which can then be visualized in Kibana. This repository contains community dashboards for Kibana and OpenSearch.
+
+It is part of our XOAP Automation Forces Open Source community library to give you a quick start into Infrastructure as Code deployments with Terraform.
 
 You can read about the details here: https://uberagent.com/blog/uberagent-3-6-brings-support-elasticsearch/
 
-## Why This Repository?
+We have a lot of Terraform modules, PowerShell DSC and Packer configurations that are Open Source and maintained by the [XOAP](https://xoap.io) staff.
 
-The uberAgent does not deliver Dashboards for Kibana or OpenSearch. So we at [XOAP](https://xoap.io) thought it would be a good idea to start with it.
-We implemented a lot of dashboards in the past months and have decided to make those available to the community. 
-This way the community can collaborate on them and bring them to the next level together.
+Please check the links for more information:
+
+- [XOAP Website](https://xoap.io)
+- [XOAP Documentation](https://docs.xoap.io)
+- [Twitter](https://twitter.com/xoap_io)
+- [LinkedIn](https://www.linkedin.com/company/xoap_io)
+
+---
+
+## Guidelines
+
+We are using the following guidelines to write code and make it easier for everyone to follow a distinctive guideline. Please check these links before starting to work on changes.
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+
+Git Naming Conventions are an important part of the development process. They describe how Branches, Commit Messages, Pull Requests and Tags should look like to make the easily understandable for everybody in the development chain.
+
+[Git Naming Conventions](https://namingconvention.org/git/)
+
+The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
+
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+The better a Pull Request description is, the better a review can understand and decide on how to review the changes. This improves implementation speed and reduces communication between the requester and the reviewer resulting in much less overhead.
+
+[Writing A Great Pull Request Description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description/)
+
+Versioning is a crucial part for everything as code. Without version tags you cannot clearly create a stable environment and be sure that your latest changes won't crash your production environment (sure it still can happen, but we are trying our best to implement everything that we can to reduce the risk)
+
+[Semantic Versioning](https://semver.org)
+
+---
 
 ## Share the Love
 Like this project? Please give it a ★ on [our GitHub](https://github.com/xoap-io/xoap-uberagent-kibana-dashboards)! (it helps us a lot).
+
+---
 
 ## Contributing
 
@@ -33,6 +83,16 @@ PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 - Submit a Pull Request so that we can review your changes 
  
 > NOTE: Be sure to merge the latest changes from "upstream" before making a pull request!
+
+---
+
+## About uberAgent and ElasticSearch
+
+The uberAgent does not deliver dashboards for Kibana or OpenSearch. So we at [XOAP](https://xoap.io) thought it would be a good idea to start with it.
+We implemented a lot of dashboards in the past months and have decided to make those available to the community.
+This way the community can collaborate on them and bring them to the next level together.
+
+---
 
 ## Configure uberAgent for ElasticSearch / OpenSearch
 
@@ -67,6 +127,8 @@ You can set them easily with PowerShell:
 [Environment]::SetEnvironmentVariable("http_proxy", "$null", "Machine")
 [Environment]::SetEnvironmentVariable("https_proxy", "$null", "Machine")
 ```
+
+---
 
 ## Dashboards
 
@@ -461,6 +523,8 @@ This dashboard displays a session status overview. Many more detailed dashboards
 This dashboard displays detailed information about user sessions.
 
 ![User_Sessions](./img/User_Sessions.jpg)
+
+---
 
 ## Copyright
 
