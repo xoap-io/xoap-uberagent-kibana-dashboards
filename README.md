@@ -20,7 +20,8 @@
 Experimental support for Elasticsearch was added to uberAgent in version 3.6.0. This allows uberAgent to send data to Elasticsearch,
 which can then be visualized in Kibana. This repository contains community dashboards for Kibana and OpenSearch.
 
-It is part of our XOAP Automation Forces Open Source community library to give you a quick start into Infrastructure as Code deployments with Terraform.
+It is part of our [XOAP](https://xoap.io) Automation Forces Open Source community library
+to give you a quick start into Infrastructure as Code deployments with Terraform.
 
 You can read about the details here: https://uberagent.com/blog/uberagent-3-6-brings-support-elasticsearch/
 
@@ -37,30 +38,41 @@ Please check the links for more information:
 
 ## Guidelines
 
-We are using the following guidelines to write code and make it easier for everyone to follow a distinctive guideline. Please check these links before starting to work on changes.
+We are using the following guidelines to write code and make it easier for everyone to follow a distinctive guideline.
+Please check these links before starting to work on changes.
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-Git Naming Conventions are an important part of the development process. They describe how Branches, Commit Messages, Pull Requests and Tags should look like to make the easily understandable for everybody in the development chain.
+Git Naming Conventions are an important part of the development process.
+They describe how Branches, Commit Messages,
+Pull Requests and Tags should look like to make them easily understandable for everybody in the development chain.
 
 [Git Naming Conventions](https://namingconvention.org/git/)
 
-The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
+He Conventional Commits specification is a lightweight convention on top of commit messages.
+It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of.
 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-The better a Pull Request description is, the better a review can understand and decide on how to review the changes. This improves implementation speed and reduces communication between the requester and the reviewer resulting in much less overhead.
+The better a Pull Request description is, the better a review can understand and decide on how to review the changes.
+This improves implementation speed and reduces communication between the requester,
+and the reviewer is resulting in much less overhead.
 
 [Writing A Great Pull Request Description](https://www.pullrequest.com/blog/writing-a-great-pull-request-description/)
 
-Versioning is a crucial part for everything as code. Without version tags you cannot clearly create a stable environment and be sure that your latest changes won't crash your production environment (sure it still can happen, but we are trying our best to implement everything that we can to reduce the risk)
+Versioning is a crucial part for Terraform Stacks and Modules.
+Without version tags you cannot clearly create a stable environment
+and be sure that your latest changes will not crash your production environment (sure it still can happen,
+but we are trying our best to implement everything that we can to reduce the risk)
 
 [Semantic Versioning](https://semver.org)
 
 ---
 
 ## Share the Love
-Like this project? Please give it a ★ on [our GitHub](https://github.com/xoap-io/xoap-uberagent-kibana-dashboards)! (it helps us a lot).
+Like this project?
+Please give it a ★ on [our GitHub](https://github.com/xoap-io/xoap-uberagent-kibana-dashboards)!
+It helps us a lot.
 
 ---
 
@@ -94,9 +106,9 @@ This way the community can collaborate on them and bring them to the next level 
 
 ---
 
-## Configure uberAgent for ElasticSearch / OpenSearch
+git status## Configure uberAgent for ElasticSearch/OpenSearch
 
-The configuration for a Elasticsearch / OpenSearch connection is done in the uberAgent configuration file. The default location for the configuration file is:
+The configuration for an Elasticsearch OpenSearch connection is done in the uberAgent configuration file. The default location for the configuration file is:
 
 ```
 [Receiver]
@@ -114,7 +126,7 @@ Read more about the ElasticSearch installation here: https://uberagent.com/docs/
 
 uberAgent uses [libCurl](https://curl.se/libcurl/) for communication/transfer.
 
-So if you are using a proxy inside your company you need to configure the client as below:
+So if you are using a proxy inside your company, you need to configure the client as below:
 
 - Two system variables have to be set in order to make uberAgent work with a proxy
 
@@ -140,7 +152,7 @@ This is the list of available dashboards.
 
 This dashboard lets you interactively analyze any filtered subset of your data over time.
 
-We created more than one dashboard in Opensearch to show all the available data.
+We created more than one dashboard in OpenSearch to show all the available data.
 
 #### Analyze data over time: Browser IE
 
