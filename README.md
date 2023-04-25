@@ -523,9 +523,3 @@ This dashboard displays a session status overview. Many more detailed dashboards
 This dashboard displays detailed information about user sessions.
 
 ![User_Sessions](./img/User_Sessions.jpg)
-
----
-
-## Copyright
-
-Copyright © 2023 XOAP.io. All rights reserved.
