@@ -1,0 +1,19 @@
+---
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: dev
+    schedule:
+      interval: daily
+    labels:
+      - github-actions
+      - dependencies
+  - package-ecosystem: terraform
+    directory: /
+    target-branch: dev
+    schedule:
+      interval: daily
+    labels:
+      - terraform
+      - dependencies
