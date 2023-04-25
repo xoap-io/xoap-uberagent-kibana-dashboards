@@ -1,0 +1,43 @@
+---
+name: Create tag and release
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: Github Tag with semantic versioning
+        # You may pin to the exact commit or the version.
+        # uses: hennejg/github-tag-action@2cd21a8413aa58e36a69cb22e64d5ad20aeb9b99
+        id: tag_version
+        uses: hennejg/github-tag-action@v4.3.1
+        with:
+          tag_prefix: ""
+          # Required for permission to tag the repo.
+          github_token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+      - name: Zip Release
+        # You may pin to the exact commit or the version.
+        # uses: TheDoctor0/zip-release@09336613be18a8208dfa66bd57efafd9e2685657
+        id: zip
+        uses: TheDoctor0/zip-release@0.6.2
+        with:
+          type: 'zip'
+          filename: 'XOAPApplicationPackagingDSC_${{ steps.tag_version.outputs.new_tag }}.zip'
+          exclusions: '*.git* /*License/* CONTRIBUTING.md CODEOWNERS.md CODE_OF_CONDUCT.md .pre-commit.yaml .gitignore .gitattributes .github'
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'XOAPApplicationPackagingDSC_${{ steps.tag_version.outputs.new_tag }}.zip'
+          tag: ${{ steps.tag_version.outputs.new_tag }}
+          name: ${{ steps.tag_version.outputs.new_tag }}
+          body: ${{ steps.tag_version.outputs.changelog }}

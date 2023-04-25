@@ -5,10 +5,18 @@ which can then be visualized in Kibana. This repository contains community dashb
 
 You can read about the details here: https://uberagent.com/blog/uberagent-3-6-brings-support-elasticsearch/
 
+
+
 ## Why This Repository?
 
-The guys from uberAgent do not deliver Dashboards for Kibana or OpenSearch. So we thought it would be a good idea to start with it.
-We implemented a lot of basic dashboards and have decided to make those available to the community. This way the community can collaborate on them and bring them together to the next level.
+The uberAgent does not deliver Dashboards for Kibana or OpenSearch. So we at [XOAP](https://xoap.io) thought it would be a good idea to start with it.
+We implemented a lot of dashboards in the past months and have decided to make those available to the community. 
+This way the community can collaborate on them and bring them to the next level together.
+
+## How to Contribute
+
+We are happy to accept contributions from the community. If you want to contribute, please follow these steps:
+
 
 ## Configure uberAgent for ElasticSearch / OpenSearch
 
