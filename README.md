@@ -5,18 +5,34 @@ which can then be visualized in Kibana. This repository contains community dashb
 
 You can read about the details here: https://uberagent.com/blog/uberagent-3-6-brings-support-elasticsearch/
 
-
-
 ## Why This Repository?
 
 The uberAgent does not deliver Dashboards for Kibana or OpenSearch. So we at [XOAP](https://xoap.io) thought it would be a good idea to start with it.
 We implemented a lot of dashboards in the past months and have decided to make those available to the community. 
 This way the community can collaborate on them and bring them to the next level together.
 
-## How to Contribute
+## Share the Love
+Like this project? Please give it a ★ on [our GitHub](https://github.com/xoap-io/xoap-uberagent-kibana-dashboards)! (it helps us a lot).
 
-We are happy to accept contributions from the community. If you want to contribute, please follow these steps:
+## Contributing
 
+### Bug Reports & Feature Requests
+
+Please use the issue tracker to report any bugs or file feature requests.
+
+### Developing
+
+If you are interested in being a contributor and want to get involved in developing this project, we would love to hear from you! Email us.
+
+PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
+
+- Fork the repo on GitHub
+- Clone the project to your own machine
+- Commit changes to your own branch
+- Push your work back up to your fork
+- Submit a Pull Request so that we can review your changes 
+ 
+> NOTE: Be sure to merge the latest changes from "upstream" before making a pull request!
 
 ## Configure uberAgent for ElasticSearch / OpenSearch
 
@@ -38,18 +54,25 @@ Read more about the ElasticSearch installation here: https://uberagent.com/docs/
 
 uberAgent uses [libCurl](https://curl.se/libcurl/) for communication/transfer.
 
-So if you are using a proxy inside your company you need to configure the llient as below:
+So if you are using a proxy inside your company you need to configure the client as below:
 
 - Two system variables have to be set in order to make uberAgent work with a proxy
 
     - http_proxy ***address:port***
     - https_proxy ***address:port***
 
-> The system variables are being handed over to the uberAgent PSADT installation packages if a proxy address is entered.
+You can set them easily with PowerShell:
+
+```powershell
+[Environment]::SetEnvironmentVariable("http_proxy", "$null", "Machine")
+[Environment]::SetEnvironmentVariable("https_proxy", "$null", "Machine")
+```
 
 ## Dashboards
 
-> These dashboards are meant to be used in a local Kibana or OpenSearch instance.
+This is the list of available dashboards.
+
+> These dashboards are meant to be used in a local Kibana or a hosted OpenSearch instance.
 
 ### Analyze data over time
 
@@ -438,3 +461,7 @@ This dashboard displays a session status overview. Many more detailed dashboards
 This dashboard displays detailed information about user sessions.
 
 ![User_Sessions](./img/User_Sessions.jpg)
+
+## Copyright
+
+Copyright © 2023 XOAP.io. All rights reserved.
