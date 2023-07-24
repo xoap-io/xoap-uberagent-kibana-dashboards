@@ -106,7 +106,7 @@ This way the community can collaborate on them and bring them to the next level 
 
 ---
 
-git status## Configure uberAgent for ElasticSearch/OpenSearch
+## Configure uberAgent for ElasticSearch/OpenSearch
 
 The configuration for an Elasticsearch OpenSearch connection is done in the uberAgent configuration file. The default location for the configuration file is:
 
