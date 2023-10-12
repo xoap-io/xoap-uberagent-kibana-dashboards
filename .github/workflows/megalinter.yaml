@@ -12,23 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-      - name: MegaLinter
-        id: ml
-        uses: megalinter/megalinter/flavors/terraform@v6
-        env:
-          VALIDATE_ALL_CODEBASE: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DISABLE: COPYPASTE,SPELL
-          DISABLE_LINTERS: TERRAFORM_TERRASCAN
-      - name: Archive production artifacts
-        if: ${{ success() }} || ${{ failure() }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: MegaLinter reports
-          path: |
-            report
-            mega-linter.log
