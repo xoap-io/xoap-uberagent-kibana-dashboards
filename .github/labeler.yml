@@ -1,0 +1,19 @@
+Feature:
+ - head-branch: ['^feature', 'feature']
+Hotfix:
+ - head-branch: ['^hotfix', 'hotfix']
+Documentation:
+- changed-files:
+  - any-glob-to-any-file: '**/*.md'
+CICD:
+- changed-files:
+  - any-glob-to-any-file: '.github/**'
+
+typescript:
+- changed-files:
+  - any-glob-to-any-file:  '**/*.ts'
+css:
+- changed-files:
+  - any-glob-to-any-file:  '**/*.css'
+
+

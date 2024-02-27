@@ -1,0 +1,4 @@
+reviewers:
+  defaults:
+    - repository-owners
+    - bbrauneck

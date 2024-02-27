@@ -1,42 +1,33 @@
-<!--
-    Thanks for submitting a Pull Request (PR) to this project. Your contribution to this project
-    is greatly appreciated!
+# Description
 
-    Please prefix the PR title with the dashboard name, e.g. 'Dashboard Name: My short description'.
-    If this is a breaking change, then also prefix the PR title with 'BREAKING CHANGE:',
-    e.g. 'BREAKING CHANGE: Dashboard Name: My short description'.
+Please include a summary of the changes and the related issue. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-    You may remove this comment block, and the other comment blocks, but please keep the headers
-    and the task list.
--->
+Fixes # (issue)
 
-#### Pull Request (PR) description
+## Type of change
 
-<!--
-    Replace this comment block with a description of your PR. Also, make sure you have updated the
-    CHANGELOG.md, see the task list below. An entry in the CHANGELOG.md is mandatory for all PRs.
--->
+Please delete options that are not relevant.
 
-#### This Pull Request (PR) fixes the following issues
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] This change requires a documentation update
 
-    If this PR does not fix an open issue, replace this comment block with None. If this PR
-    resolves one or more open issues, replace this comment block with a list of the issues using
-    a GitHub closing keyword, e.g.:
+# How Has This Been Tested?
 
-- Fixes #123
-- Fixes #124
+Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
 
-#### Task list
+- [ ] Test A
+- [ ] Test B
 
-    To aid community reviewers in reviewing and merging your PR, please take the time to run
-    through the below checklist and make sure your PR has everything updated as required.
 
-    Change to [x] for each task in the task list that applies to your PR. For those task that
-    don't apply to you PR, leave those as is.
+# Checklist:
 
-- [ ] Added an entry to the change log under the Unreleased section of the file CHANGELOG.md.
-      Entry should say what was changed and how that affects users (if applicable), and
-      reference the issue being resolved (if applicable).
-- [ ] Resource documentation added/updated in README.md.
-- [ ] Localization strings added/updated in all localization files as appropriate.
-- [ ] Dashboard tested locally on Kibana with the latest available version or define a `minimum_kibana_version`
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests or screenshots that prove my fix is effective or that my feature works
+- [ ] Any dependent changes have been merged and published in downstream modules
+
